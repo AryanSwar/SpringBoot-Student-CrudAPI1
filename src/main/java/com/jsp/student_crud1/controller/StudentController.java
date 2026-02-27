@@ -3,6 +3,7 @@ package com.jsp.student_crud1.controller;
 import com.jsp.student_crud1.model.Student;
 import com.jsp.student_crud1.service.StudentService;
 import com.jsp.student_crud1.service.impl.StudentServiceImpl;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,13 +11,15 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/student")
+@RequiredArgsConstructor
 public class StudentController {
     //tight coupling - specialization
 
 //    StudentService service = new StudentServiceImpl();
 
-    @Autowired
-    StudentService service;
+    //replace of autowired using RequiredArgConstructor
+//    @Autowired
+    private final StudentService service;
 
     //removing the end point to achieve handle crud by using @RequestMapping
 //    @PostMapping("student/save")

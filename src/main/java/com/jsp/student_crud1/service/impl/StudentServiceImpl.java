@@ -3,16 +3,19 @@ package com.jsp.student_crud1.service.impl;
 import com.jsp.student_crud1.model.Student;
 import com.jsp.student_crud1.repository.StudentRepository;
 import com.jsp.student_crud1.service.StudentService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
+@RequiredArgsConstructor
 public class StudentServiceImpl implements StudentService {
 
-    @Autowired
-    StudentRepository studentRepository;
+    //replace of autowired using @RequiredArgsConstructor
+//    @Autowired
+    private final StudentRepository studentRepository;
 
     @Override
     public Student saveStudent(Student student) {
