@@ -47,3 +47,30 @@ This screenshot shows all available Student API endpoints.
 This screenshot shows the Student model structure (roll, name, phone, email).
 
 [![Swagger Student Schema](swagger-ui-student-schema.png)](swagger-ui-student-schema.png)
+
+
+
+
+## 🔹 API Endpoints
+
+| HTTP Method | URL                      | Description                        |
+|-------------|--------------------------|------------------------------------|
+| POST        | `/student`               | Create a new student               |
+| GET         | `/student`               | Find a student by roll number      |
+| GET         | `/student/find`          | Get all students                   |
+| PUT         | `/student`               | Update an existing student         |
+| DELETE      | `/student`               | Delete a student by roll number    |
+| GET         | `/student/find/{email}`  | Find students by email             |
+
+
+
+## 🔹 Student Schema
+
+The `Student` entity contains the following fields:
+
+| Field  | Type    | Description              |
+|--------|---------|--------------------------|
+| roll   | int     | Unique roll number       |
+| name   | String  | Student name             |
+| phone  | long    | Student phone number     |
+| email  | String  | Student email address    |
