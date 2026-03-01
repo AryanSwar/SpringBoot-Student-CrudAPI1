@@ -40,3 +40,10 @@ After running the application locally, open the following URL in your browser:
 This screenshot shows all available Student API endpoints.
 
 [![Swagger Student Endpoints](swagger-ui-student-endpoints.png)](swagger-ui-student-endpoints.png)
+
+
+## 📸 Swagger UI – Student Schema
+
+This screenshot shows the Student model structure (roll, name, phone, email).
+
+[![Swagger Student Schema](swagger-ui-student-schema.png)](swagger-ui-student-schema.png)
