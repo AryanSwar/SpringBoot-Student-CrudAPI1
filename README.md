@@ -39,4 +39,4 @@ After running the application locally, open the following URL in your browser:
 
 This screenshot shows all available Student API endpoints.
 
-![Swagger Student Endpoints](swagger-ui-student-endpoints.png)
+![Swagger Student Endpoints](images/swagger-ui-student-endpoints.png)
