@@ -35,4 +35,8 @@ Swagger provides a browser-based interface to:
 After running the application locally, open the following URL in your browser:
 ### URL : **http://localhost:8080/swagger-ui/index.html**
 
+## 📸 Swagger UI – Student Endpoints
 
+This screenshot shows all available Student API endpoints.
+
+![Swagger Student Endpoints](swagger-ui-student-endpoints.png)
