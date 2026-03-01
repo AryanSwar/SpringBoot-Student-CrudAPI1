@@ -17,4 +17,6 @@ public interface StudentService {
     Student updateStudent(Student student);
 
     void deleteStudent(int roll);
+
+    List<Student> findByEmail(String email);
 }

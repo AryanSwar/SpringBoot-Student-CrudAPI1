@@ -4,7 +4,6 @@ import com.jsp.student_crud1.model.Student;
 import com.jsp.student_crud1.repository.StudentRepository;
 import com.jsp.student_crud1.service.StudentService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -47,5 +46,12 @@ public class StudentServiceImpl implements StudentService {
         Student student = studentRepository.findById(roll).orElseThrow(()->new RuntimeException("Student not found"));
 
         studentRepository.delete(student);
+    }
+
+
+    @Override
+    public List<Student> findByEmail(String email)
+    {
+        return studentRepository.findByEmail(email);
     }
 }
